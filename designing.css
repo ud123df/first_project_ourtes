@@ -1,0 +1,279 @@
+/* Header Styles */
+body{
+    background-color: #181c28;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03)1px, transparent 1px);
+    background-size: 80px 80px;
+    color:#e5e7ef;
+    min-height: 100vh;
+}
+.main-header{
+    padding: 40px 0 0 0;
+    text-align: center;
+    position: relative;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 0 40px;
+}
+.logo{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #ffd700;
+    font-weight: bold;
+    letter-spacing: -15px;
+}
+.nav a{
+    color: #e5e7ef;
+    text-decoration: none;
+    margin: 0 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.nav a:hover{
+    color: #ffd700;
+}
+.menu-icon{
+    font-size: 2rem;
+    color: #e5e7ef;
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    margin-top: 40px;
+}
+.header-tagline{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: #bfc4d1;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.header-title{
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    color: #e5e7ef;
+    letter-spacing: 12px;
+    font-weight: 700;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+.header-divider{
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #ffd700;
+    margin: 24px auto 0 auto;
+    border-radius: 2px;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+}
+.statue-container{
+    position: relative;
+    width: 320px;
+    margin-bottom: 24px;
+}
+.statue-img{
+    width: 100%;
+    filter: grayscale(1) brightness(1.1) contrast(1.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+}
+.glow-heart{
+    position: relative;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #ffd700 60% rgba(255, 215, 0, 0.2)100%);
+    border-radius: 0.85;
+    box-shadow: 0 0 40px 20px #ffd700, 0 0 80px 40px #ffb30044;
+    opacity: 0.85;
+    pointer-events: none;
+}
+.hero-text{
+    text-align: center;
+    max-width: 500px;
+}
+.hero-title{
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color:#ffd700;
+    margin: 12px;
+    letter-spacing: 2px;
+}
+.hero-desc{
+    font-family: 'Montserrat', sans-serif;
+    color: #bfc4d1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+.philosopher-grid{
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin: 48px 0 32px 0;
+}
+.philosopher-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(24, 28, 40, 0.7);
+    border-radius: 18px;
+    padding: 24px, 20px, 16, 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    min-width: 160px;
+    transition: transform 0.2s;
+}
+.philosopher-card:hover{
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.15);
+
+}
+.philosopher-img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(1) brightness(1.1);
+    margin-bottom: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+.philosopher-name{
+    font-family: 'Cinzel', serif ;
+    color: #e5e7ef;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+.philosopher-label{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffd700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+.practices-section{
+    margin: 64px auto 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+.practices-title{
+    font-family: 'Cinzel', serif;
+    color: #e5e7ef;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+}
+.practices-tabs{
+    display: flex;
+    justify-content:center ;
+    gap: 18px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+.tab{
+    background: transparent;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    padding: 8px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 8px;
+}
+.tab.active, .tab:hover{
+    background: #ffd700;
+    color: #181c28;
+}
+.practices-content{
+    display: flex;
+    justify-content: center;
+}
+.practices-card{
+    display: flex;
+    align-items: center;
+    background: rgba(24, 28, 40, 0.7);
+    border-radius: 18px;
+    padding: 32px 36px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    gap: 32px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.practices-img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius: 50%;
+    filter: grayscale(1) brightness(1.1);
+    margin-right: 24px;
+    box-shadow: 0, 2px, 12px rgba(0, 0, 0, 0.5);
+}
+.practices-heading{
+    font-family: 'Cinze', serif;
+    color: #ffd700;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.practices-desc{
+    font-family: 'Cinzel', sans-serif;
+    color: #bfc4d1;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: left;
+}
+.philosophy-section{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 48px;
+    position: relative;
+}
+.philosophy-image{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+.philosophy-statue-img{
+    max-width: 320px;
+    width: 100%;
+    filter: grayscale(1) brightness(1.1);
+    border-radius: 18px;
+    box-shadow: 0, 8px, 40px, rgba(0, 0, 0, 0.7); 
+}
+.philosophy-content{
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    padding-bottom: 32px;
+}
+.philosophy-title{
+    font-family: 'Cinzel', serif;
+    color: #e5e7ef;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+.philosophy-desc{
+    font-family: 'Montserrat', sans-serif;
+    color: #bfc4d1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
